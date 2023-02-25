@@ -27,9 +27,9 @@ def time_between_shutdowns(logfile):
     
     sh2_date = logstamp_to_datetime(sh2.split()[1])
     
-    difference = sh2_date-sh1_date
+    dfr = sh2_date-sh1_date
     
-    return difference
+    return dfr
 
 
 # >>>> The code below will call your function and print the results
