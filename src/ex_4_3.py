@@ -19,9 +19,9 @@ def time_between_shutdowns(logfile):
     
     shutdowns = get_shutdown_events(logfile)
     
-    sh1 = Shutdowns[0]
+    sh1 = shutdowns[0]
     
-    sh2 = Shutdowns[-1]
+    sh2 = shutdowns[-1]
        
     sh1_date = logstamp_to_datetime(sh1.split()[1])
     
